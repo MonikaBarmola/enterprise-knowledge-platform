@@ -58,12 +58,9 @@ def access_control_accuracy(results):
     return correct / len(blocked)
 
 
-# ---------------------------------------------------------------------------
+
 # FAITHFULNESS (LLM-as-judge)
-# ---------------------------------------------------------------------------
-# Skipping ragas here - it currently needs langchain-core<0.3, which
-# conflicts with the langchain-chroma version this project uses. This does
-# the same LLM-as-judge check with a plain OpenAI call instead.
+
 
 FAITHFULNESS_PROMPT = """You are evaluating an AI assistant's answer for FAITHFULNESS -
 whether every factual claim in the answer is actually supported by the given context.

@@ -27,7 +27,7 @@ CHAT_MODEL = "gpt-4o-mini"
 TOP_K = 5
 
 
-# -------------------- INGESTION --------------------
+# INGESTION 
 
 def document_id(path):
     return hashlib.sha256(
@@ -117,7 +117,7 @@ def ingest():
     print(f"Indexed {len(chunks)} chunks.")
 
 
-# -------------------- SECURE RETRIEVAL --------------------
+# SECURE RETRIEVAL
 
 class NotIngestedError(Exception):
     pass
@@ -169,7 +169,7 @@ def retrieve(question, allowed_departments):
     return retriever.invoke(question)
 
 
-# -------------------- ANSWER GENERATION --------------------
+# ANSWER GENERATION 
 
 def answer_question(question, chunks):
     context = "\n\n".join(
@@ -212,7 +212,7 @@ CONTEXT:
     return response.content, sources
 
 
-# -------------------- AUDIT LOGGING --------------------
+#  AUDIT LOGGING
 
 def log_query(username, role, question, departments, sources, chunk_count):
     conn = sqlite3.connect(AUDIT_DB)
