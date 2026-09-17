@@ -155,6 +155,7 @@ Allowed Departments
 Semantic Search + Department Filter
       ↓
 Authorized Document Chunks
+```
 
 ### 5. Answer Generation
 
