@@ -1,4 +1,4 @@
-# Enterprise Knowledge Platform — RAG with RBAC 
+# Enterprise Knowledge Platform — Secure RAG with RBAC
  
 ## Brief One-Line Summary 
  
