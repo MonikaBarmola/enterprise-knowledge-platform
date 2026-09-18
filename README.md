@@ -12,6 +12,8 @@ The application is built as an interactive Streamlit web application with authen
 
 ## Demo
 
+**Live Demo:** [Try it here →](https://enterprise-knowledge-platform-o5bl.onrender.com)
+
 **Login Screen**
 ![Login Screen](screenshots/login.png)
 
